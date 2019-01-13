@@ -1,0 +1,14 @@
+<resources>
+
+    <string name="app_name">BEVECO</string>
+    <string name="short_path">여행지 최단 경로 찾기</string>
+    <string name="hotel">호텔 검색</string>>
+    <string name="sight">관광지 검색</string>>
+    <string name="food">맛집 검색</string>
+
+    <string name="search_text">여행지를 입력하세요</string>
+    <string name="search_button">검색</string>
+
+    <string name="search_hotel">숙박을 원하는 지역을 입력하세요</string>
+
+</resources>
