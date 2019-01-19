@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.myapp.user.google_beveco">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/bevecoicon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAlsS9ySpKL9ZgopCMXZtrmAc5lXdQP0Go" />
+
+        <activity android:name=".View.StartView"
+            android:theme="@style/StartTheme"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AppController.MainActivity"/>
+        <activity android:name=".Model.ShortPath"/>
+        <activity android:name=".Model.SearchHotel"/>
+        <activity android:name=".Model.SearchTour"/>
+        <activity android:name=".Model.SearchFood"/>
+    </application>
+
+</manifest>
