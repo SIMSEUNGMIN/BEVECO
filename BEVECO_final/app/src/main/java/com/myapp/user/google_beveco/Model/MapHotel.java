@@ -104,8 +104,10 @@ public class MapHotel extends Activity {
         String[] strData = filtering(MapsActivity.markerAddress);
 
         for(int i = 0; i < rowTotal - 1; i++){
-            if(mapHotelAdapter.getTitle(i).contains(strData[1]) || mapHotelAdapter.getAddress(i).contains(strData[1])
-                    || mapHotelAdapter.getTitle(i).contains(strData[2]) || mapHotelAdapter.getAddress(i).contains(strData[2])){
+            if((mapHotelAdapter.getAddress(i).contains(strData[0])
+                && (mapHotelAdapter.getAddress(i).contains(strData[1]))
+                    || (mapHotelAdapter.getAddress(i).contains(strData[2])))
+                    ){
                 mapSearchHotelAdapter.addItem(mapHotelAdapter.getTitle(i), mapHotelAdapter.getAddress(i), mapHotelAdapter.getTel(i));
             }
         }

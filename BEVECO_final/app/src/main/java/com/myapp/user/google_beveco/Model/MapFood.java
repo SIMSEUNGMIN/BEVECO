@@ -103,8 +103,9 @@ public class MapFood extends Activity {
         String[] strData = filtering(MapsActivity.markerAddress);
 
         for(int i = 0; i < rowTotal - 1; i++){
-            if(mapFoodAdapter.getTitle(i).contains(strData[1]) || mapFoodAdapter.getAddress(i).contains(strData[1])
-                    || mapFoodAdapter.getTitle(i).contains(strData[2]) || mapFoodAdapter.getAddress(i).contains(strData[2])){
+            if((mapFoodAdapter.getAddress(i).contains(strData[0]))
+                   && (mapFoodAdapter.getAddress(i).contains(strData[1]))
+                    ){
                 mapSearchFoodAdapter.addItem(mapFoodAdapter.getTitle(i), mapFoodAdapter.getAddress(i), mapFoodAdapter.getTel(i));
             }
         }

@@ -103,8 +103,9 @@ public class MapTour extends Activity {
         String[] strData = filtering(MapsActivity.markerAddress);
 
         for(int i = 0; i < rowTotal - 1; i++){
-            if(mapTourAdapter.getTitle(i).contains(strData[1]) || mapTourAdapter.getAddress(i).contains(strData[1])
-                    || mapTourAdapter.getTitle(i).contains(strData[2]) || mapTourAdapter.getAddress(i).contains(strData[2])){
+            if((mapTourAdapter.getAddress(i).contains(strData[0]))
+                   && (mapTourAdapter.getAddress(i).contains(strData[1]))
+                    ){
                 mapSearchTourAdapter.addItem(mapTourAdapter.getTitle(i), mapTourAdapter.getAddress(i), mapTourAdapter.getTel(i));
             }
         }
