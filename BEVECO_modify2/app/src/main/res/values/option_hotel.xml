@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="hotel">
+        <item>서비스의 범위를 선택하세요</item>
+        <item>시/구 단위</item>
+        <item>동 단위</item>
+    </string-array>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/markerView"
+        android:layout_width="430dp"
+        android:layout_height="40dp"
+        android:text="추천 숙소"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:background="@android:color/black"/>
+
+    <Spinner
+        android:id="@+id/_hotel"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="right"/>
+
+
+    <ListView
+        android:id="@+id/map_hotel"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" />
+
+</LinearLayout>
